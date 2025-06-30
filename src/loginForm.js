@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './LoginForm.css'
 
 // for a single useState and adding the onChange to each input
 // function LoginForm(){
@@ -46,13 +47,13 @@ function LoginForm(){
     }
 
     return(
-        <div>
-            <h2>
+        <div className="login-container">
+            <h2 className="login-title">
                 Login
             </h2>
             <br/>
-            <form 
-                onSubmit={handleSubmit}>
+            <form
+                onSubmit={handleSubmit} className="login-form">
                 <label>
                 User Name:
                 </label>

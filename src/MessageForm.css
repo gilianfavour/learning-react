@@ -1,0 +1,64 @@
+.message-container {
+  background-color: #fff5e6;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.message-title {
+  text-align: center;
+  font-size: 26px;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-form label {
+  font-weight: bold;
+  color: #6c5ce7;
+}
+
+.message-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.message-form textarea:focus {
+  border-color: #e67e22;
+  outline: none;
+}
+
+.message-form button {
+  padding: 12px;
+  background-color: #e67e22;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #f39c12;
+}
+
+.messageFormSection {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}

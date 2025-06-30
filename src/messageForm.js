@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './MessageForm.css';
 
 function MessageForm() {
   const [message, setMessage] = useState('');
@@ -10,9 +11,9 @@ function MessageForm() {
   };
 
   return (
-    <div>
-        <h2> Message Form</h2>
-        <form onSubmit={handleSubmit}>
+    <div className='message-container'>
+        <h2 className='message-title'> Message Form</h2>
+        <form onSubmit={handleSubmit} className='message-form'>
       <label>
         Your Message:
         <br />

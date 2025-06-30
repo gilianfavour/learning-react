@@ -1,7 +1,8 @@
 import React from "react";
+import './ParkingList.css'
 
 function Car({ brand }) {
-    return <li>
+    return <li className="car-item">
         {brand}
         </li>
 }
@@ -22,12 +23,12 @@ function ParkingList(){
     }]
 
     return(
-        <>
-        <h2>Who lives in my garage</h2>
-        <ul>
-            {cars.map((car) => <Car key ={car.id} brand ={car.brand}/>)}
-        </ul>
-        </>
+        <div className="parj-conatiner">
+            <h2 className="parking-title">Who lives in my garage</h2>
+            <ul className="car-list">
+                {cars.map((car) => <Car key ={car.id} brand ={car.brand}/>)}
+            </ul>
+        </div>
     )
 }
 

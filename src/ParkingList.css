@@ -1,0 +1,46 @@
+.parking-container {
+  background-color: #fff9f0;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #f8c291;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.parking-title {
+  font-size: 28px;
+  color: #e17055;
+  margin-bottom: 20px;
+}
+
+.car-list {
+  list-style: none;
+  padding: 0;
+}
+
+.car-item {
+  background-color: #ffeaa7;
+  margin: 10px auto;
+  padding: 12px;
+  width: 60%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d3436;
+  transition: all 0.3s ease;
+}
+
+.car-item:hover {
+  background-color: #fab1a0;
+  cursor: pointer;
+}
+
+.parkList-section {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
