@@ -1,0 +1,29 @@
+.goal-section {
+  padding: 30px;
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+  background-color: #eef7f8;
+  border: 2px solid #b0d4d4;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.goal-section h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.goal-section h2.goal-made {
+  color: white;
+  background-color: #28a745;
+}
+
+.goal-section h2.goal-missed {
+  color: white;
+  background-color: #dc3545;
+}
+

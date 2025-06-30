@@ -1,16 +1,19 @@
-.greet-card{
+.greetCard{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center; 
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 .card {
   background-color: #ded4f7;
   border: 3px solid #0e0d0d;
   border-radius: 12px;
   padding: 20px;
-  width: 400px;
+  width: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
   font-family: Arial, sans-serif;
 }

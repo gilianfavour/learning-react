@@ -1,0 +1,67 @@
+.select-container {
+  background-color: #e0f7fa;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.select-title {
+  font-size: 26px;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.select-form label {
+  font-weight: bold;
+  color: #004d40;
+  font-size: 16px;
+}
+
+select {
+  margin-top: 8px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #004d40;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #00796b;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #b2dfdb;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #004d40;
+}
+
+.selectFormSection {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}

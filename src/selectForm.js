@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './SelectFruit.css'
 
 function SelectForm() {
   const [fruit, setFruit] = useState('');
@@ -10,21 +11,24 @@ function SelectForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Choose a fruit:
+     <div className="select-container">
+      <h2 className="select-title">Select Your Fruit</h2>
+      <form onSubmit={handleSubmit} className="select-form">
+        <label>
+          Choose a fruit:
+          <br />
+          <select value={fruit} onChange={(e) => setFruit(e.target.value)}>
+            <option value="">-- Select one --</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="orange">Orange</option>
+          </select>
+        </label>
         <br />
-        <select value={fruit} onChange={(e) => setFruit(e.target.value)}>
-          <option value="">-- Select one --</option>
-          <option value="apple">Apple</option>
-          <option value="banana">Banana</option>
-          <option value="mango">Mango</option>
-          <option value="orange">Orange</option>
-        </select>
-      </label>
-      <br />
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit" disabled={!fruit}>Submit</button>
+      </form>
+    </div>
   );
 }
 
